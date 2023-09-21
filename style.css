@@ -1,0 +1,279 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(215, 219, 217);
+}
+
+h2 {
+    text-align: center;
+}
+
+/* HEADER */
+
+header {
+    background: rgb(194, 128, 128);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+ul {
+    width: 100%;
+    height: auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.submenu a:hover {
+    background-color: rgb(240, 159, 159);
+    color: white;
+    padding: 10px 20px;
+    transition: ease-in .2s;
+}
+
+.menuHambu {
+    display: none;
+    position: relative;
+}
+
+.hamburguesa {
+    display: none;
+}
+
+/* SOBRE MI */
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.info {
+    display: flex;
+}
+
+.sub-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 15px;
+}
+
+/* CONOCIMIENTOS */
+
+.programas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.lenguajes {
+    text-align: center;
+    margin: 5px;
+    border: 2px solid black;
+    display: inline-block;
+    box-shadow: 6px 20px 10px slategrey;
+    padding-bottom: 5px;
+    background-color: aliceblue;
+}
+
+.lenguajes i {
+    font-size: xx-large;
+}
+
+.lenguajes:hover {
+    /*INTERACCION CON EL MOUSE EN LAS TARJETAS*/
+    background-color: rgb(194, 128, 128);
+    width: 50%;
+    color: aliceblue;
+    transition: ease-in .4s;
+}
+
+/* PROYECTOS */
+
+.conteiner-proyecto {
+    text-align: center;
+}
+
+.proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.proyecto {
+    margin: 5px;
+    border: 2px solid black;
+    box-shadow: 6px 20px 10px #2a2b2c;
+    background-color: blanchedalmond;
+    height: 70px;
+    border-radius: 10%;
+    width: 30%;
+    min-width: 300px;
+}
+
+.proyecto a{
+    text-align: center;
+}
+
+.proyecto:hover {
+    scale: 1.2;
+    background-color: rgb(228, 164, 164);
+    cursor: pointer;
+}
+
+/* CONTACTO */
+
+.contacto {
+    height: 100%;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    display: block;
+    background: #cbc8c4;
+}
+
+.resumen-contacto {
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+}
+
+p i {
+    font-size: large;
+}
+
+
+/* FOOTER */
+
+footer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    background: rgb(194, 128, 128);
+}
+
+.social-iconos {
+    display: flex;
+    justify-content: center;
+}
+
+.menuFooter {
+    display: flex;
+}
+
+.menuFooter ul {
+    padding: 4px;
+    margin: 6px;
+    justify-content: space-evenly;
+}
+
+footer p {
+    text-align: center;
+}
+
+.iconos {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 9, 21);
+    border-radius: 50%;
+    padding: 6px;
+    text-decoration: none;
+    margin: 2px;
+    font-size: x-large;
+}
+
+.iconos:hover {
+    background-color: rgb(101, 68, 68);
+}
+
+
+@media screen and (min-width: 900px),
+(max-width: 1023px) {}
+
+@media screen and (max-width: 767px) {
+
+    body {
+        width: 100%;
+    }
+
+    .menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .menuHambu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+
+    .menuHambu>li {
+        display: inline-block;
+    }
+
+    .menuHambu a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+    .submenu {
+        display: none;
+        position: absolute;
+    }
+
+    .submenuH li {
+        display: block;
+    }
+
+    .menuHambu>li:hover .submenuH {
+        display: block;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+    .lenguajes {
+        font-size: small;
+    }
+
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto {
+        font-size: small;
+        text-align: center;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: space-evenly;
+        width: 200px;
+        font-size: small;
+    }
+
+    .menuHambu {
+        display: block;
+    }
+
+    .menuHambu>Li :hover .submenu {
+        display: block;
+    }
+}
